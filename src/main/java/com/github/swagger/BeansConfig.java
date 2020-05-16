@@ -16,6 +16,7 @@ public class BeansConfig {
     @Bean
     public Docket docket() {
         return new Docket(DocumentationType.SWAGGER_2)
+                .groupName("persons-api-v1")
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.github.swagger"))
                 .build()

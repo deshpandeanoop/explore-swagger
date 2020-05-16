@@ -1,8 +1,11 @@
 package com.github.swagger;
 
+import io.swagger.annotations.ApiModelProperty;
+
 public class Person {
     private String name;
     private int age;
+    @ApiModelProperty(value = "PAN should be valid and verified", required = true)
     private String panNumber;
 
     public String getName() {
